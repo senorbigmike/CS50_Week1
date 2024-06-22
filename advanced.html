@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top right links -->
+    <div class="top-right-links">
+        <a href="index.html" class="btn btn-link">Google Search</a>
+        <a href="image.html" class="btn btn-link">Image Search</a>
+        <a href="advanced.html" class="btn btn-link">Advanced Search</a>
+    </div>    
+    
+    <div class="container-advanced vh-100 d-flex flex-column justify-content-flex-start">
+        <form class="advanced-search-form" action="https://www.google.com/search">
+            <div class="form-group">
+                <label for="all">Find pages with all these words:</label>
+                <input type="text" id="all" name="as_q" class="form-control mb-2">
+            </div>
+            <div class="form-group">
+                <label for="exact">Find pages with this exact word or phrase:</label>
+                <input type="text" id="exact" name="as_epq" class="form-control mb-2">
+            </div>
+            <div class="form-group">
+                <label for="any">Find pages with any of these words:</label>
+                <input type="text" id="any" name="as_oq" class="form-control mb-2">
+            </div>
+            <div class="form-group">
+                <label for="none">Find pages with none of these words:</label>
+                <input type="text" id="none" name="as_eq" class="form-control mb-2">
+            </div>
+            <button type="submit" class="btn btn-primary">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>

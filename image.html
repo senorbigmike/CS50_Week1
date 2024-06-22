@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top-right links -->
+    <div class="top-right-links">
+        <a href="index.html" class="btn btn-link">Google Search</a>
+        <a href="image.html" class="btn btn-link">Image Search</a>
+        <a href="advanced.html" class="btn btn-link">Advanced Search</a>
+    </div>
+    <!-- Centered search form -->
+    <div class="container text-center vh-100 d-flex flex-column justify-content-center">
+        <form class="other-search-form" action="https://www.google.com/search">
+            <input type="hidden" name="sclient" value="img">
+            <input type="text" name="q" class="form-control mb-2" placeholder="Search images...">
+            <button type="submit" class="btn btn-primary mb-2">Enter Query Here</button>
+        </form>
+    </div>
+</body>
+</html>
