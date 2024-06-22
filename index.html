@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top-right links -->
+    <div class="top-right-links">
+        <a href="index.html" class="btn btn-link">Google Search</a>
+        <a href="image.html" class="btn btn-link">Image Search</a>
+        <a href="advanced.html" class="btn btn-link">Advanced Search</a>
+    </div>
+    <!-- Centered search form -->
+    <div class="container text-center vh-100 d-flex flex-column justify-content-center">
+        <form class="home-search-form" action="https://www.google.com/search">
+            <input type="text" name="q" class="form-control mb-2" placeholder="Enter Search Query">
+            
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary mb-2">Google Search</button>
+                <button type="button" class="btn btn-secondary mb-2" onclick="luckySearch()">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function luckySearch() {
+            const query = document.querySelector('input[name="q"]').value;
+            window.location.href = `https://www.google.com/search?q=${query}&btnI=I`;
+        }
+    </script>
+</body>
+</html>
+
+
